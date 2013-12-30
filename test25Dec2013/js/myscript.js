@@ -1,7 +1,14 @@
+
+
+$( document ).ready(function() {
 $(".show-menu" ).click(function() {
-	alert('hello');
-	$(this).parents('.menu').show();
+	$('div.menu').show();
+	$('.close-menu').show();
+	$(this).hide();
 });
-$(".hide-menu" ).click(function() {
-	$(this).parents('.menu').hide();
+$(".close-menu" ).click(function() {
+	$('div.menu').hide();
+	$('.show-menu').show();
+	$(this).hide();
+});
 });

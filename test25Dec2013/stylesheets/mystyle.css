@@ -11,12 +11,12 @@ Setting the Grid and Layout
   width: 100%;
   margin: 0 auto;
 }
-/* line 46, ../../Ruby193/lib/ruby/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .container:before, .container:after {
   content: "";
   display: table;
 }
-/* line 50, ../../Ruby193/lib/ruby/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .container:after {
   clear: both;
 }
@@ -40,7 +40,7 @@ body {
   padding: 0;
 }
 
-/* line 60, ../sass/mystyle.scss */
+/* line 61, ../sass/mystyle.scss */
 h1 {
   font-size: 2em;
   color: #7e7774;
@@ -49,35 +49,34 @@ h1 {
   font-weight: normal;
 }
 
-/* line 67, ../sass/mystyle.scss */
+/* line 68, ../sass/mystyle.scss */
 ol, ul, li, div {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 73, ../sass/mystyle.scss */
+/* line 74, ../sass/mystyle.scss */
 a {
   color: #34d1c6;
   text-decoration: none;
 }
 
-/* line 77, ../sass/mystyle.scss */
+/* line 78, ../sass/mystyle.scss */
 a:hover {
   color: #85e3dd;
 }
 
-/* line 80, ../sass/mystyle.scss */
+/* line 81, ../sass/mystyle.scss */
 img {
   width: 100%;
   height: auto;
 }
 
-/* line 84, ../sass/mystyle.scss */
+/* line 85, ../sass/mystyle.scss */
 .logo img {
-  margin-top: 2em;
-  max-width: 169px;
-  width: auto;
+  float: left;
+  margin: 2em 2em 0;
 }
 
 /********************************************
@@ -256,6 +255,7 @@ Highlight**********************
 /* line 209, ../sass/mystyle.scss */
 .work-bg {
   background: none repeat scroll 0 0 #34D1C6;
+  line-height: 0;
 }
 
 /**********************************
@@ -333,13 +333,14 @@ Work Page CSS********************
 /**********************************
 *********Media Queries*************
 ***********************************/
+/******Desktop**********/
 @media screen and (min-width: 650px) {
-  /* line 280, ../sass/mystyle.scss */
+  /* line 283, ../sass/mystyle.scss */
   .small-screen {
     display: none;
   }
 
-  /* line 281, ../sass/mystyle.scss */
+  /* line 284, ../sass/mystyle.scss */
   .header {
     float: left;
     width: 100%;
@@ -353,7 +354,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 284, ../sass/mystyle.scss */
+  /* line 287, ../sass/mystyle.scss */
   .header .logo {
     float: left;
     width: 16.66667%;
@@ -367,7 +368,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 287, ../sass/mystyle.scss */
+  /* line 290, ../sass/mystyle.scss */
   .header .menu {
     float: left;
     width: 83.33333%;
@@ -381,12 +382,12 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 290, ../sass/mystyle.scss */
+  /* line 293, ../sass/mystyle.scss */
   .header .small-screen {
     display: none;
   }
 
-  /* line 294, ../sass/mystyle.scss */
+  /* line 297, ../sass/mystyle.scss */
   .slideshow, .highlight, .content, .latest-news-header {
     clear: left;
     float: left;
@@ -403,7 +404,7 @@ Work Page CSS********************
     padding: 0;
   }
 
-  /* line 299, ../sass/mystyle.scss */
+  /* line 302, ../sass/mystyle.scss */
   .news-row {
     clear: left;
     float: left;
@@ -418,7 +419,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 302, ../sass/mystyle.scss */
+  /* line 305, ../sass/mystyle.scss */
   .news-row .news-1 {
     float: left;
     width: 25%;
@@ -432,7 +433,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 305, ../sass/mystyle.scss */
+  /* line 308, ../sass/mystyle.scss */
   .news-row .news-2 {
     float: left;
     width: 25%;
@@ -446,7 +447,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 308, ../sass/mystyle.scss */
+  /* line 311, ../sass/mystyle.scss */
   .news-row .news-3 {
     float: left;
     width: 25%;
@@ -460,7 +461,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 311, ../sass/mystyle.scss */
+  /* line 314, ../sass/mystyle.scss */
   .news-row .news-4 {
     float: left;
     width: 25%;
@@ -475,7 +476,7 @@ Work Page CSS********************
     word-wrap: break-word;
   }
 
-  /* line 315, ../sass/mystyle.scss */
+  /* line 318, ../sass/mystyle.scss */
   .work-container {
     clear: left;
     float: left;
@@ -492,7 +493,7 @@ Work Page CSS********************
     margin-top: 20px;
   }
 
-  /* line 320, ../sass/mystyle.scss */
+  /* line 323, ../sass/mystyle.scss */
   .work {
     clear: left;
     float: left;
@@ -507,7 +508,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 323, ../sass/mystyle.scss */
+  /* line 326, ../sass/mystyle.scss */
   .work .work-block-1 {
     float: left;
     width: 33.33333%;
@@ -521,7 +522,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 326, ../sass/mystyle.scss */
+  /* line 329, ../sass/mystyle.scss */
   .work .work-block-2 {
     float: left;
     width: 33.33333%;
@@ -535,7 +536,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 329, ../sass/mystyle.scss */
+  /* line 332, ../sass/mystyle.scss */
   .work .work-block-3 {
     float: left;
     width: 33.33333%;
@@ -550,7 +551,7 @@ Work Page CSS********************
     word-wrap: break-word;
   }
 
-  /* line 333, ../sass/mystyle.scss */
+  /* line 336, ../sass/mystyle.scss */
   .view-all-work {
     clear: left;
     float: left;
@@ -566,7 +567,7 @@ Work Page CSS********************
     word-wrap: break-word;
   }
 
-  /* line 338, ../sass/mystyle.scss */
+  /* line 341, ../sass/mystyle.scss */
   .client-heading {
     clear: left;
     float: left;
@@ -582,7 +583,7 @@ Work Page CSS********************
     word-wrap: break-word;
   }
 
-  /* line 342, ../sass/mystyle.scss */
+  /* line 345, ../sass/mystyle.scss */
   .clients-row {
     clear: left;
     float: left;
@@ -597,7 +598,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 345, ../sass/mystyle.scss */
+  /* line 348, ../sass/mystyle.scss */
   .clients-row .client-block-col-1 {
     float: left;
     width: 16.66667%;
@@ -611,7 +612,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 348, ../sass/mystyle.scss */
+  /* line 351, ../sass/mystyle.scss */
   .clients-row .client-block-col-2 {
     float: left;
     width: 16.66667%;
@@ -625,7 +626,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 351, ../sass/mystyle.scss */
+  /* line 354, ../sass/mystyle.scss */
   .clients-row .client-block-col-3 {
     float: left;
     width: 16.66667%;
@@ -639,7 +640,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 354, ../sass/mystyle.scss */
+  /* line 357, ../sass/mystyle.scss */
   .clients-row .client-block-col-4 {
     float: left;
     width: 16.66667%;
@@ -653,7 +654,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 357, ../sass/mystyle.scss */
+  /* line 360, ../sass/mystyle.scss */
   .clients-row .client-block-col-5 {
     float: left;
     width: 16.66667%;
@@ -667,7 +668,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 360, ../sass/mystyle.scss */
+  /* line 363, ../sass/mystyle.scss */
   .clients-row .client-block-col-6 {
     float: left;
     width: 8.33333%;
@@ -682,7 +683,7 @@ Work Page CSS********************
     word-wrap: break-word;
   }
 
-  /* line 366, ../sass/mystyle.scss */
+  /* line 369, ../sass/mystyle.scss */
   .footer .footer-container-arrow {
     clear: left;
     float: left;
@@ -697,7 +698,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 370, ../sass/mystyle.scss */
+  /* line 373, ../sass/mystyle.scss */
   .footer .footer-container {
     clear: left;
     float: left;
@@ -712,7 +713,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 373, ../sass/mystyle.scss */
+  /* line 376, ../sass/mystyle.scss */
   .footer .footer-container .footer-blk-1 {
     float: left;
     width: 41.66667%;
@@ -726,7 +727,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 376, ../sass/mystyle.scss */
+  /* line 379, ../sass/mystyle.scss */
   .footer .footer-container .footer-blk-2 {
     float: left;
     width: 25%;
@@ -740,7 +741,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 379, ../sass/mystyle.scss */
+  /* line 382, ../sass/mystyle.scss */
   .footer .footer-container .footer-blk-3 {
     float: left;
     width: 33.33333%;
@@ -754,7 +755,7 @@ Work Page CSS********************
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 382, ../sass/mystyle.scss */
+  /* line 385, ../sass/mystyle.scss */
   .footer .footer-container .footer-copyright-blk {
     clear: left;
     float: left;
@@ -771,38 +772,76 @@ Work Page CSS********************
   }
 }
 @media screen and (min-width: 1366px) {
-  /* line 391, ../sass/mystyle.scss */
+  /* line 394, ../sass/mystyle.scss */
   .work-container, .latest-news {
     margin: 0 auto;
     float: none;
   }
 }
+/****** Small screen**********/
 @media screen and (max-width: 650px) {
-  /* line 400, ../sass/mystyle.scss */
+  /* line 406, ../sass/mystyle.scss */
   .work-block, .news {
     margin: 10px 20px;
   }
 
-  /* line 403, ../sass/mystyle.scss */
+  /* line 409, ../sass/mystyle.scss */
   .menu {
     display: none;
     clear: both;
   }
 
-  /* line 407, ../sass/mystyle.scss */
+  /* line 413, ../sass/mystyle.scss */
   .small-screen {
     color: #FFFFFF;
+    cursor: pointer;
     float: right;
-    margin: 1em 0;
+    margin: 1em;
   }
 
-  /* line 412, ../sass/mystyle.scss */
+  /* line 419, ../sass/mystyle.scss */
   .close-menu {
     display: none;
   }
 
-  /* line 415, ../sass/mystyle.scss */
+  /* line 422, ../sass/mystyle.scss */
   .logo img {
     float: left;
+    margin: 2em 2em 0;
+    width: auto;
+  }
+
+  /* line 427, ../sass/mystyle.scss */
+  .header ul {
+    display: block;
+    margin: 12px;
+    text-align: center;
+  }
+
+  /* line 432, ../sass/mystyle.scss */
+  .primary-menu li {
+    border-bottom: 1px solid #54D8CF;
+    border-top: 1px solid #34D1C6;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  /* line 440, ../sass/mystyle.scss */
+  .primary-menu li:first-child {
+    border-top: 1px solid #54D8CF;
+    margin-top: 12px;
+  }
+
+  /* line 444, ../sass/mystyle.scss */
+  .primary-menu li a {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 448, ../sass/mystyle.scss */
+  .primary-menu li a:hover {
+    border: none;
   }
 }

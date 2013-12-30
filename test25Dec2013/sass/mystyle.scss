@@ -55,6 +55,7 @@ body{
 	color: $color;
 	margin: 0;
 	padding: 0;
+	// letter-spacing: 1px;
 }
 
 h1{
@@ -82,9 +83,8 @@ img{
 	height: auto;
 }
 .logo img{
-    margin-top: 2em;
-    max-width: 169px;
-    width: auto;
+    float: left;
+    margin: 2em 2em 0;
 }
 
 /********************************************
@@ -206,7 +206,7 @@ Highlight**********************
 .work-blk-link:hover .title{display: block;}
 .work-blk-link{ display: block;}
 .work-blk-link:hover img{opacity: 0.25; }
-.work-bg{background: none repeat scroll 0 0 #34D1C6}
+.work-bg{background: none repeat scroll 0 0 #34D1C6;  line-height: 0;}
 /**********************************
 *********News Block CSS************
 **********************************/
@@ -276,6 +276,9 @@ Work Page CSS********************
 /**********************************
 *********Media Queries*************
 ***********************************/
+
+
+/******Desktop**********/
 @media screen and (min-width:650px) {
 	.small-screen{ display: none;}
 	.header{
@@ -393,6 +396,9 @@ Work Page CSS********************
   	float: none;
   }
   }
+
+
+  /****** Small screen**********/
   @media screen and (max-width:650px){
   	.container {
   		$zen-column-count: 1;
@@ -405,14 +411,41 @@ Work Page CSS********************
 		clear: both
 	}
 	.small-screen{
-		 color: #FFFFFF;
+ 	color: #FFFFFF;
+    cursor: pointer;
     float: right;
-    margin: 1em 0;
+    margin: 1em;
 	}
 	.close-menu{
 		display: none;
 	}
 	.logo img{
-		float: left;
+	float: left;
+    margin: 2em 2em 0;
+    width: auto;
+	}
+	.header ul {
+     display: block;
+    margin: 12px;
+    text-align: center;
+}
+	.primary-menu li {
+   border-bottom: 1px solid #54D8CF;
+    border-top: 1px solid #34D1C6;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: center;
+}
+.primary-menu li:first-child{
+    border-top: 1px solid #54D8CF;
+    margin-top: 12px;
+}
+.primary-menu li a{
+	padding: 0;
+	margin: 0;
+	}
+	.primary-menu li a:hover{
+	border: none
 	}
 }
